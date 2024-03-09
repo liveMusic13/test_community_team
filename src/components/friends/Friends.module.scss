@@ -1,0 +1,15 @@
+@import '../../assets/styles/functions';
+
+.wrapper_friends {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: adapt(10px, 1440px);
+
+	> .block__friend {
+		border: 1px solid black;
+		border-radius: 20px;
+		padding: adapt(10px, 1440px);
+	}
+}

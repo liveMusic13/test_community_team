@@ -1,0 +1,63 @@
+@import './functions';
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	background-color: wheat;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	gap: 3rem;
+
+	> .content {
+		display: flex;
+		flex-direction: column;
+		gap: adapt(20px, 1440px);
+
+		> h1 {
+			font-size: 1.5rem;
+			font-weight: 700;
+			align-self: center;
+		}
+	}
+}
