@@ -1,11 +1,8 @@
 import { FC } from 'react';
-import { useDispatch } from 'react-redux';
 import { IFriendsProps } from '../../types/props.types';
 import styles from './Friends.module.scss';
 
 const Friends: FC<IFriendsProps> = ({ friends }) => {
-	const dispatch = useDispatch();
-	console.log(friends);
 	return (
 		<div className={styles.wrapper_friends}>
 			{friends?.map(friend => {

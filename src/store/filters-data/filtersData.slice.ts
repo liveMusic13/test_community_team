@@ -33,10 +33,10 @@ export const filtersData = createSlice({
 			}
 		},
 
-		toggleFriends: (state, { payload }) => {
+		toggleFriends: (state, action) => {
 			state.friends = !state.friends;
 		},
-		toggleAvatarColors: (state, { payload }) => {
+		toggleAvatarColors: (state, action) => {
 			state.isAllColors = !state.isAllColors;
 			if (state.isAllColors) {
 				for (const color in state.selectedColors) {
