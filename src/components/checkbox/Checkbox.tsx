@@ -44,9 +44,9 @@ const Checkbox: FC<ICheckboxProps> = ({ checkbox, color }) => {
 						checked={checkFilter}
 						onChange={() => {
 							if (checkbox?.name === 'Друзья') {
-								dispatch(filtersDataAction.toggleFriends(''));
+								dispatch(filtersDataAction.toggleFriends());
 							} else if (checkbox?.name === 'Все цвета') {
-								dispatch(filtersDataAction.toggleAvatarColors(''));
+								dispatch(filtersDataAction.toggleAvatarColors());
 							} else {
 								if (checkbox?.name === 'Все') {
 									dispatch(filtersDataAction.toggleGroup('all'));
